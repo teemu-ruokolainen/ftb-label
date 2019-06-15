@@ -1,0 +1,10 @@
+# OS (Mac OS X)
+._*
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Dev
+/server
