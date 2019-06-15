@@ -1,10 +1,16 @@
 # Building a Docker image for ftb-label
 
-This repository contains scripts to build a Docker image for the ftb-label tagger of [FinnPos](https://github.com/mpsilfve/FinnPos), a morphological tagging and lemmatization tool for Finnish.
+This repository contains scripts to build a local Docker image for the ftb-label tagger of [FinnPos](https://github.com/mpsilfve/FinnPos), a morphological tagging and lemmatization tool for Finnish. To build the image, run:
 
-The resulting image is published in the [Docker Hub](https://hub.docker.com/) where Docker can find it automatically.
+```
+$ git clone git@github.com:teemu-ruokolainen/ftb-label.git
+$ cd ftb-label
+$ docker build --tag your_preferred_image_name .
+```
 
-To predict morphological tags and lemmas for running Finnish text, run:
+The resulting image has been published in the [Docker Hub](https://hub.docker.com/) where Docker can find it automatically.
+
+To predict morphological tags and lemmas for running Finnish tex, run:
 ```
 $ echo "Tämä on hyvä esimerkkilause!" | docker run -i teemuruokolainen/ftb-label:latest
 ```
