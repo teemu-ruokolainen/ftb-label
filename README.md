@@ -24,7 +24,7 @@ The output looks like this:
 
 To predict morphological tags and lemmas for already tokenized Finnish text, run:
 ```
-$ echo "Tiesitkö , että tämä teksti on jo tokenisoitu ?" | docker run -i teemuruokolainen/ftb-label:latest notokenize
+$ echo "Huomasitko , että tämä teksti on jo tokenisoitu ?" | docker run -i teemuruokolainen/ftb-label:latest notokenize
 ```
 
 To predict morphological tags and lemmas for collections of texts (e.g. sentences or documents), run:
