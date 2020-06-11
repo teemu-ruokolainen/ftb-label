@@ -3,7 +3,7 @@
 This repository contains scripts to build a local Docker image for the ftb-label tagger of [FinnPos](https://github.com/mpsilfve/FinnPos), a morphological tagging and lemmatization tool for Finnish. To build the image, run:
 
 ```
-$ git clone git@github.com:teemu-ruokolainen/ftb-label.git
+$ git clone https://github.com/teemu-ruokolainen/ftb-label.git
 $ cd ftb-label
 $ docker build --tag your_preferred_image_name .
 ```
